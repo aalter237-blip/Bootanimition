@@ -1,6 +1,3 @@
-# Large packaged zip is published via GitHub Releases (not git)
-bootanimation.zip
-
 # Python
 __pycache__/
 *.pyc

@@ -7,18 +7,18 @@
 
 ## تحميل الملف الجاهز
 
-📦 **[Download bootanimation.zip](https://github.com/aalter237-blip/Bootanimition/releases/latest)**  
-(Release asset — جاهز للتثبيت مباشرة)
+📦 **[bootanimation.zip](https://github.com/aalter237-blip/Bootanimition/raw/arena/01a03b16-bootanimition/bootanimation.zip)** — اضغط للتحميل المباشر  
+أو من صفحة المستودع: ملف `bootanimation.zip` في الجذر.
 
 ## المواصفات
 
 | | |
 |---|---|
 | الدقة | 720 × 1600 |
-| الإطارات | 40 |
+| الإطارات | 40 (PNG) |
 | السرعة | 5 fps |
 | الضغط | Store (بدون ضغط) |
-| الحجم | ≈ 132 MB |
+| الحجم | ≈ 46 MB |
 
 ## محتويات المستودع
 

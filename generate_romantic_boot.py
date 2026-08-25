@@ -900,8 +900,8 @@ def main():
     preview_frames = []
     for i in range(NUM_FRAMES):
         frame = render_frame(i, stars, hearts, petals, bokeh, names, mm_logos, dust, fonts)
-        path = OUT_DIR / f"frame_{i + 1:04d}.bmp"
-        frame.save(path, format="BMP")
+        path = OUT_DIR / f"frame_{i + 1:04d}.png"
+        frame.save(path, format="PNG", optimize=True)
         if i in (0, 5, 10, 15, 20, 25, 30, 35, 39):
             preview_frames.append((i, frame.copy()))
         print(f"  frame {i + 1:02d}/{NUM_FRAMES}")
@@ -919,7 +919,7 @@ def main():
     strip.save(prev_dir / "strip.png")
 
     gif_frames = [
-        Image.open(OUT_DIR / f"frame_{i:04d}.bmp").resize((216, 480), Image.LANCZOS)
+        Image.open(OUT_DIR / f"frame_{i:04d}.png").resize((216, 480), Image.LANCZOS)
         for i in range(1, NUM_FRAMES + 1)
     ]
     gif_frames[0].save(
