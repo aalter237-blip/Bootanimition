@@ -1,0 +1,67 @@
+========================================
+  M❤M Boot Animation — جاهز للتثبيت
+  أسود × ذهبي | محمد & مزن
+========================================
+
+الملف الجاهز:
+  bootanimation.zip   (~132 MB)
+
+المواصفات:
+  الدقة     : 720 × 1600
+  الإطارات  : 40
+  السرعة    : 5 fps
+  الضغط     : Store (بدون ضغط) — متوافق مع أندرويد
+
+
+======== طريقة التثبيت (Root) ========
+
+1) انسخ الملف إلى الهاتف
+2) باستخدام Root Explorer / MiXplorer / Terminal:
+
+   نسخ احتياطي أولاً:
+     cp /system/media/bootanimation.zip /sdcard/bootanimation_backup.zip
+
+   ثم استبدل:
+     adb root
+     adb remount
+     adb push bootanimation.zip /system/media/bootanimation.zip
+     adb shell chmod 644 /system/media/bootanimation.zip
+     adb reboot
+
+   أو يدوياً:
+     /system/media/bootanimation.zip
+     أو /system/product/media/bootanimation.zip
+     أو /oem/media/bootanimation.zip
+     (حسب جهاز HONOR / Huawei)
+
+3) صلاحيات الملف: 644 (rw-r--r--)
+4) أعد تشغيل الهاتف
+
+
+======== بدون روت (تطبيقات) ========
+
+- Themes / Magisk module (إن وُجد)
+- بعض أجهزة HONOR تدعم الثيمات الرسمية
+
+
+======== محتوى الحزمة ========
+
+bootanimation.zip
+├── desc.txt
+└── part0/
+    ├── frame_0001.bmp
+    ├── frame_0002.bmp
+    ├── ...
+    └── frame_0040.bmp
+
+
+======== إعادة التوليد ========
+
+python3 generate_romantic_boot.py
+ثم أعد عمل zip بـ:
+  zip -0 -r bootanimation.zip desc.txt part0/
+
+
+========================================
+  M❤M  |  محمد ♥ مزن  |  حبي · حياتي
+========================================

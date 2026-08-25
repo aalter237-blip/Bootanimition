@@ -1,0 +1,12 @@
+# Large packaged zip is published via GitHub Releases (not git)
+bootanimation.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
